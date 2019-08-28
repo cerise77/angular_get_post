@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body ng-controller="patientlogController">
+
+  <div class="grid-header-profil">
+
+    <div class="grid-header-left">
+      <div class="grid-header-left-img">
+        <img src="img/Burger.png" alt="">
+      </div>
+      <div class="grid-header-left-txt">
+        <h2>{{patientInfo.firstName}} {{patientInfo.lastName}}</h2>
+      </div>
+    </div>
+
+    <div class=""></div>
+
+    <div class="grid-header-right"></div>
+
+  </div>
+
+  <div class="menu-profil">
+   <div class="">
+     <a  href="#profil?id={{patientInfo.id}}">PROFIL</a>
+   </div>
+
+   <div class="">
+     <!--<a  href="#patientlog">PATIENTLOG</a>-->
+     <a  href="#patientlog?id={{patientInfo.id}}">PATIENTLOG</a>
+   </div>
+
+   <div class="">
+     <a  href="#information?id={{patientInfo.id}}">INFORMATION</a>
+   </div>
+  </div>
+
+  <div class="food-menu">
+    <h2 class="food-h2">25.10.2018</h2>
+
+    <div class="protein">
+      <div class="">
+        {{patientInfo.protein}} Protein
+      </div>
+
+      <div class="">
+        95%Energy
+      </div>
+
+      <div class="">
+         {{patientInfo.liqiud}} Liquid
+      </div>
+
+      <div class=""></div>
+    </div>
+
+  </div>
+
+  <div class="list-food">
+    <div class=""></div>
+
+    <div class="left">
+      08:50
+    </div>
+
+    <div class="right">
+      Omelet (180gr) bread (50gr)<br>
+      tomatoes (100gr)<br>
+      Coffee with milk (120ml)<br>
+    </div>
+
+    <div class=""></div>
+  </div>
+
+
+  <div class="list-food">
+    <div class=""></div>
+
+    <div class="left">
+      13:10
+    </div>
+
+    <div class="right">
+      Mushroom cream-soup (210gr)<br>
+      Boiled potato (70gr) <br>
+      Roasted chicken (100gr) <br>
+      Apple juice (200ml)<br>
+    </div>
+
+    <div class=""></div>
+  </div>
+
+  <div class="list-food">
+    <div class=""></div>
+
+    <div class="left">
+      18:35
+    </div>
+
+    <div class="right">
+      Herbal tea (300ml) <br>
+      Brownie cake (100gr)<br>
+    </div>
+
+    <div class=""></div>
+  </div>
+
+  <div class="list-food">
+    <div class=""></div>
+
+    <div class="left">
+      20:40
+    </div>
+
+    <div class="right">
+      Salad (200ml)<br>
+      Baked salmon (150gr)<br>
+      Hot cocoa (200ml)<br>
+    </div>
+
+    <div class=""></div>
+  </div>
+
+
+</body>
+</html>

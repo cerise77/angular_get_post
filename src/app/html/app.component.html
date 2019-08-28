@@ -1,0 +1,35 @@
+<div class="logo">
+  <svg data-name="Lager 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 928.77 250" width="150" height="80"><title>MinMenu_Pos</title><path d="M406.75,250H375.52V110.47L362.62,176h-12.9l-12.56-65.52V250H309.32V.17H344l15.62,91L372.12.17h34.63Z"/><path d="M420.32,250V.17h31.23V250Z"/><path d="M537.76,250H506.53l-10.18-62.8V250H465.12V.17h31.23l10.18,62.44V.17h31.23Z"/><path d="M689.48,250H658.25V110.47L645.35,176h-12.9L619.9,110.47V250H592.06V.17h34.62l15.62,91L654.86.17h34.62Z"/><path d="M759.4.17V30.7H734.28v72.64H759.4v29.54H734.28v87.57H759.4V250H703.05V.17Z"/><path d="M843.92,250H812.69l-10.19-62.8V250H771.27V.17H802.5l10.19,62.44V.17h31.23Z"/><path d="M888.71,220.8h8.83V.17h31.23v234.2L913.15,250h-40l-15.62-15.62V.17h31.23Z"/><path d="M69.1,129.62a34.94,34.94,0,0,1-29-15.31L0,55.35,23.41,39.48l40.14,59a6.66,6.66,0,0,0,9.23,1.77L96.59,84.05a6.65,6.65,0,0,0,1.76-9.23L58.21,15.88,81.62,0l40.15,58.94a35,35,0,0,1-9.3,48.52L88.65,123.61A34.74,34.74,0,0,1,69.1,129.62Z"/><rect x="98.73" y="5.67" width="28.29" height="258.1" transform="translate(-55.71 85.05) rotate(-33.62)"/><path d="M77.12,250,53.83,234,215.52,0l25.6,5.71c.54,3.27,15,77-39.39,156l-19.67,3.62-31.4-21.63Zm89.59-129.64,19.38,13.35A215.21,215.21,0,0,0,215,50.2Z"/></svg>
+</div>
+
+<div class="form-all">
+  <form name="answerForm">
+
+  <div class="form-group">
+
+    <div class="img">
+      <img src="img/Mail.png" alt="">
+    </div>
+
+    <input id="answerName" class="form-control" name="name" [(ngModel)]="user.name" required placeholder="Enter your name here" />
+    <div class="notcorrect">Not correct username/Not registered username</div>
+  </div>
+
+  <div class="form-group" id="">
+    <div class="img two-img">
+      <img src="img/Password.png" alt="">
+    </div>
+
+    <input id="answerPassword" class="form-control" name="password" [(ngModel)]="user.password" required placeholder="Enter your password here" maxlength="10" size="10" />
+    <div class="notcorrectP">Wrong password</div>
+    <p class="forget">Forget the password</p>
+  </div>
+
+  <p class="remem"><input type="checkbox" name="option1" value="a1">Remember me</p>
+
+  <div class="form-group">
+      <a class="btn btn-default disab" #toList (click)="submit(user)">Continue</a>
+  </div>
+
+</form>
+</div>

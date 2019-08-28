@@ -1,0 +1,271 @@
+<div class="grid-header">
+
+  <div class="grid-header-left">
+    <div class="grid-header-left-img">
+      <img src="img/Burger.png" alt="">
+    </div>
+    <div class="grid-header-left-txt">
+      <h2>Beboere</h2>
+    </div>
+  </div>
+
+  <div class=""></div>
+
+  <div class="grid-header-right">
+    <div class="grid-header-right-img">
+      <img src="img/Search.png" alt="">
+    </div>
+    <div class="grid-header-right-txt">
+      <!--<img src="img/Burger.png" alt="">-->
+    </div>
+  </div>
+
+</div>
+
+<h1 class="list-h1">Name of the department</h1>
+
+<div class="line"></div>
+
+<!--<div ng-repeat="user in users" style="position: relative; top: 200px; text-align: left; margin-bottom: 15px;">
+  <b style="font-weight: 600;">{{user.firstName}}</b>
+  <p>{{user.userName}}</p>
+</div>-->
+
+<div class="portion-popup">
+  <h3>Indtast aktuel vægt</h3>
+
+  <div class="portion-grid">
+    <div class="">
+      <img src="img/Empty - default.png" alt="">
+    </div>
+    <div class="">
+      <p>Ingenting</p>
+    </div>
+  </div>
+
+  <div class="portion-grid">
+    <div class="">
+      <img src="img/Small - default.png" alt="">
+    </div>
+    <div class="">
+      <p>Lille</p>
+    </div>
+  </div>
+
+  <div class="portion-grid">
+    <div class="">
+      <img src="img/Medium - fill.png" alt="">
+    </div>
+    <div class="">
+      <p>Mellem</p>
+    </div>
+  </div>
+
+  <div class="portion-grid">
+    <div class="">
+      <img src="img/Big - default.png" alt="">
+    </div>
+    <div class="">
+      <p>Stor</p>
+    </div>
+  </div>
+
+  <h3 class="middle-portion">Spist</h3>
+
+  <div class="portion-grid">
+    <div class="">
+      <img src="img/Empty - default.png" alt="">
+    </div>
+    <div class="">
+      <p>Intent</p>
+    </div>
+  </div>
+
+  <div class="portion-grid">
+    <div class="">
+      <img src="img/1-4 - default.png" alt="">
+    </div>
+    <div class="">
+      <p>1/4</p>
+    </div>
+  </div>
+
+  <div class="portion-grid">
+    <div class="">
+      <img src="img/1-2 - default тАУ 1.png" alt="">
+    </div>
+    <div class="">
+      <p>1/2</p>
+    </div>
+  </div>
+
+  <div class="portion-grid">
+    <div class="">
+      <img src="img/2-3 - default.png" alt="">
+    </div>
+    <div class="">
+      <p>2/3</p>
+    </div>
+  </div>
+
+  <div class="portion-grid">
+    <div class="">
+      <img src="img/Big - default.png" alt="">
+    </div>
+    <div class="">
+      <p>Alt</p>
+    </div>
+  </div>
+
+  <div class="quantity-popup-grid-txt portion-txt">
+    <div class=""></div>
+
+    <div class="">
+      <p>ANNULLER</p>
+    </div>
+
+    <div class="">
+      <p>GEM</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="quantity-popup">
+  <h3>Indtast aktuel vægt</h3>
+
+  <div class="quantity-popup-grid">
+    <div class="">
+      <img src="img/Minus.png" alt="">
+    </div>
+
+    <div class="">
+      <p>1</p>
+    </div>
+
+    <div class="">
+      <img src="img/Plus.png" alt="">
+    </div>
+  </div>
+
+  <div class="quantity-popup-grid-txt">
+    <div class=""></div>
+
+    <div class="">
+      <p>ANNULLER</p>
+    </div>
+
+    <div class="">
+      <p>GEM</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myfond_gris" class="myfondGris" opendiv="" (click)='close()'></div>
+
+<div *ngFor="let human of humans" class="main-grids">
+
+  <div class="grid-title">
+  <!--  <h3 class="list-h3">Værelse <span>{{human.roomNumber}} </span>- <span>{{human.firstName}}</span><span> {{human.lastName}}</span></h3>-->
+  <h3 class="list-h3">Værelse <span>{{human?.firstName}}</span><span> {{human?.lastName}}</span></h3>
+
+    <div class="text-lef-img">
+      <div class="text-lef-img-left">
+        <h4 class="list-h4">Blød kost</h4>
+      </div>
+      <div class="text-lef-img-right">
+        <img src="img/Info.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-text-list">
+
+    <div class="photo">
+      <div class="photo-img1">
+        <img src="./img/man.jpeg" alt="">
+        <!--<img src="{{user.userPhotoUrl}}" alt="">-->
+
+
+      </div>
+
+      <!--<a class="profil" (click)='profilClick()'>-->
+      <a class="profil" href="/profil?id={{human?.id}}">
+        Profil
+      </a>
+    </div>
+
+    <div class="middle-part">
+
+      <h5 class="list-h5">Aften</h5>
+      <div class="line-block">
+        <div class="part-left">
+          <p>?</p>
+        </div>
+
+        <div class="part-right">
+          <p>?</p>
+        </div>
+      </div>
+
+      <h5 class="list-h5">Frokost</h5>
+      <div class="line-block">
+        <div class="part-left">
+          <p>Mellem</p>
+        </div>
+
+        <div class="part-right">
+          <p>?</p>
+        </div>
+      </div>
+
+      <h5 class="list-h5">Morgen</h5>
+      <div class="line-block">
+        <div class="part-left">
+          <p>Stor</p>
+        </div>
+
+        <div class="part-right last">
+          <!--<p>3/4</p>-->
+          <div class="part-right-img cursorPointer" (click)='portionA()'>
+            <ul>
+              <li>
+                <span>3/4</span>
+              </li>
+              <li>
+                <img src="img/2-3 - fill.png" alt="">
+              </li>
+            </ul>
+            <!--<span>3/4</span>
+            <img src="img/2-3 - fill.png" alt="">-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="right-part col-3">
+
+      <h5 class="list-h5">Snack</h5>
+      <div class="line-block">
+        1
+      </div>
+      <h5 class="list-h5">Proteindrink</h5>
+      <div class="line-block">
+        2
+      </div>
+      <h5 class="list-h5">Glas Vand</h5>
+      <div class="line-block cursorPointer" (click)='quantityA()'>
+        1
+      </div>
+
+      <div class="popup-">
+
+      </div>
+
+      </div>
+    </div>
+
+
+</div>

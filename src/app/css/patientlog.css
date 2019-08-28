@@ -1,0 +1,194 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}body{-webkit-text-size-adjust:none}
+
+
+body {
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #000;
+}
+
+.food-menu{
+  margin-top: 20px;
+  padding: 20px;
+  background: #F3F3F3;
+}
+h2.food-h2{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.protein{
+  display: grid;
+  grid-template-columns: 0.6fr 0.6fr 0.6fr 2.2fr;
+  grid-gap: 1vw;
+
+  margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+.protein{
+  display: grid;
+  grid-template-columns: 1.3fr 1.2fr 1fr 0.5fr;
+  grid-gap: 1vw;
+    /*grid-gap: 0.5vw;*/
+  }
+}
+.protein > div{
+  font-size: 14px;
+}
+.protein > div:nth-child(1){
+  color: #00BFA5;
+}
+.protein > div:nth-child(2){
+  color: #FFAB00;
+}
+.protein > div:nth-child(3){
+  color: #1976D2;
+}
+
+.list-food{
+  margin: 20px 0 20px;
+
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 1.5fr 2fr;
+  grid-gap: 0.5vw;
+}
+@media only screen and (max-width: 730px) {
+  .list-food{
+    display: grid;
+    grid-template-columns: 0.7fr 0.5fr 2fr 0.7fr;
+    grid-gap: 1vw;
+  }
+}
+.list-food .left {
+  font-size: 14px;
+  font-weight: 600;
+}
+.list-food .right {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+
+/*---------information---------------*/
+.message {
+  margin: 40px 30px 50px;
+}
+
+.message  .message-grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1.6fr 0.7fr;
+  /*grid-gap: 0.5vw;*/
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .message  .message-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.6fr 1.2fr;
+    /*grid-gap: 0.5vw;*/
+    margin-bottom: 20px;
+  }
+}
+.message  .message-grid div:first-child{
+  font-size: 16px;
+  font-weight: 600;
+}
+.message .message-information-txt{
+  margin: 5px 0 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.message  .message-grid div:last-child{
+  text-align: right;
+}
+.message .message-grid ul{
+  list-style: none;
+}
+.message .message-grid ul > li{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.message .message-information{
+  background: #F1F0F4;
+  padding: 10px 7px 20px;
+  border-bottom: solid 1px #96989F;
+}
+.message .message-information.edit{
+  /*border-bottom: solid 1px #16B122;*/
+  border-bottom: solid 1px #96989F;
+}
+.message .message-information.recieve{
+  border-bottom: solid 1px #16B122;
+}
+.message .message-information h6{
+  margin-bottom: 5px;
+  font-size: 10px;
+  opacity: 0.5;
+  color: #000;
+}
+.message .message-information p{
+  font-size: 14px;
+  line-height: 18px;
+}
+.message .message-information span{
+  font-weight: 600;
+}
+
+.message .but-edit {
+  cursor: pointer;
+}
+.message .but-edit-green{
+  display: none;
+}
+
+
+.message ul.but-down {
+  margin-top: 20px;
+  text-align: right;
+  display: none;
+}
+.message ul.but-down > li{
+  display: inline-block;
+  margin-right: 20px;
+}
+.message ul.but-down > li:last-child{
+  margin-right: 0;
+}
+.message ul.but-down > li:first-child input{
+  padding: 10px 25px;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 3px;
+  box-shadow:  1px 1px 3px 0 rgba(0,0,0,0.5);
+  font-weight: 600;
+}
+.message ul.but-down > li:last-child input{
+  padding: 10px 25px;
+  background: #F04D4D;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow:  1px 1px 3px 0 rgba(0,0,0,0.5);
+  font-weight: 600;
+}
+
+/*------Checkmark-Information-------------*/
+.message .message-grid ul.list-checkmark{
+  list-style: none;
+}
+.message .message-grid ul.list-checkmark > li{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.message .checkmark {
+  cursor: pointer;
+}
+.message .checkmark-green{
+  display: none;
+}

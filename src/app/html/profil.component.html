@@ -1,0 +1,181 @@
+  <div class="grid-header-profil">
+
+    <div class="grid-header-left">
+      <div class="grid-header-left-img">
+        <img src="img/Burger.png" alt="">
+      </div>
+      <div class="grid-header-left-txt">
+        <h2>{{userInfo.firstName}} {{userInfo.lastName}}</h2>
+      </div>
+    </div>
+
+    <div class=""></div>
+
+    <div class="grid-header-right"></div>
+
+  </div>
+
+  <div class="menu-profil">
+   <div class="">
+     <!--<a href="#profil">PROFIL</a>-->
+     <a  href="/profil?id={{userInfo?.id}}">PROFIL</a>
+   </div>
+
+   <div class="">
+     <a  href="/patientlog?id={{userInfo?.id}}">PATIENTLOG</a>
+   </div>
+
+   <div class="">
+     <a  href="/information?id={{userInfo?.id}}">INFORMATION</a>
+   </div>
+  </div>
+
+
+  <div class="quantity-popup">
+    <h3>Indtast aktuel vægt</h3>
+
+    <div class="quantity-popup-grid">
+      <div class="">
+        <img src="img/Minus.png" alt="">
+      </div>
+
+      <div class="">
+        <p>64,5 kg</p>
+      </div>
+
+      <div class="">
+        <img src="img/Plus.png" alt="">
+      </div>
+    </div>
+
+    <div class="quantity-popup-grid-txt">
+      <div class=""></div>
+
+      <div class="">
+        <p>ANNULLER</p>
+      </div>
+
+      <div class="">
+        <p>GEM</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="myfond_gris" class="myfondGris" opendiv="" ng-click='close()'></div>
+
+  <div class="grid-profiler-main">
+    <div class="profiler-img">
+      <!--<img src="{{userInfo.userPhotoUrl}}" alt="">-->
+      <img src="./img/man.jpeg" alt="">
+    </div>
+
+    <div class="">
+      <div class="grid-profiler-main-txt">
+        <p>021269-2149</p>
+      </div>
+      <div class="grid-profiler-main-txt">
+        <p>{{userInfo.age}} y.o</p>
+      </div>
+      <div class="grid-profiler-main-txt">
+        <ul>
+          <li><p>Kostregistrer</p></li>
+          <li><img src="img/Checkmark.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="">
+
+    </div>
+  </div>
+
+
+  <h1 class="h1">Afdeling</h1>
+
+  <div class="list-afdeling">
+      <select ng-click='selection(this)'>
+          <option class="option" value="Afdeling 1">Afdeling 1</option>
+          <option value="Afdeling 2">Afdeling 2</option>
+          <option value="Afdeling 3">Afdeling 3</option>
+      </select>
+  </div>
+
+
+  <div class="list-varelese">
+      <select ng-click='selectionVarelese(this)'>
+          <option value="Varelese 1">Værelse 21</option>
+          <option value="Varelese 2">Værelse 22</option>
+          <option value="Varelese 3">Værelse 23</option>
+      </select>
+  </div>
+
+  <div class="diet">
+    <div class="diet-left">
+        <h2 class="h2">Kosttype</h2>
+    </div>
+    <div class="diet-right">
+      <img src="./img/Info.png" alt="">
+    </div>
+  </div>
+
+  <div class="list-kost">
+      <select ng-click='selectionKoste(this)'>
+          <option value="Kost 1">Blød kost 1</option>
+          <option value="Kost 2">Blød kost 2</option>
+          <option value="Kost 3">Blød kost 3</option>
+      </select>
+  </div>
+
+  <div class="requerement-txt">
+    <ul>
+      <li>
+        <h2 class="h2">Krav for at nå mål</h2>
+      </li>
+      <li>
+        <img src="img/arrow.png" alt="">
+      </li>
+      <li>1,0 kg</li>
+    </ul>
+
+  </div>
+
+
+  <div class="grid-requerement">
+
+    <div class="grid-requerement-txt">
+      <p class="p-txt">Mål for vægt</p>
+    </div>
+    <div class="">
+      <input type="button" name="" value="64.0kg">
+    </div>
+    <div class="">
+      <input type="button" name="" value="+" class="but-plus" ng-click='weight()'>
+    </div>
+
+    <div class="grid-requerement-txt">
+      <p class="p-txt">Sidste vejning</p>
+    </div>
+    <div class="">
+      <input type="button" name="" value="14.09.2018">
+    </div>
+    <div class="">
+      <input type="button" name="" value="63.5kg">
+    </div>
+
+    <div class="grid-requerement-txt">
+      <p class="p-txt">Forrige vejning</p>
+    </div>
+    <div class="">
+      <input type="button" name="" value="06.08.2018">
+    </div>
+    <div class="">
+      <input type="button" name="" value="62.5kg">
+    </div>
+
+  </div>
+
+  <!--<div ng-repeat="user in users" style="position: relative; top: 200px; text-align: left; margin-bottom: 15px;">
+    <b style="font-weight: 600;">{{user.firstName}}</b>
+    <p>{{user.userName}}</p>
+  </div>-->
